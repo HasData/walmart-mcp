@@ -1,0 +1,24 @@
+{
+  "$schema": "https://agent-plugins.org/schemas/1.0.0/plugin.schema.json",
+  "name": "hasdata-walmart-mcp",
+  "version": "1.0.0",
+  "description": "Walmart MCP server for Cursor. Search results, product pages with the buy-box seller, and customer reviews on walmart.com and walmart.ca, as structured JSON. Remote MCP server hosted by HasData, connects over streamable HTTP with your HasData API key.",
+  "author": {
+    "name": "HasData",
+    "url": "https://hasdata.com"
+  },
+  "homepage": "https://docs.hasdata.com/apis/walmart/search",
+  "repository": "https://github.com/HasData/walmart-mcp",
+  "license": "MIT",
+  "keywords": [
+    "mcp",
+    "walmart",
+    "walmart-mcp",
+    "ecommerce",
+    "product-data",
+    "price-monitoring",
+    "model-context-protocol",
+    "hasdata",
+    "scraper"
+  ]
+}
