@@ -167,6 +167,12 @@ A prompt that names a product rather than an item id takes two calls, one search
 
 ## Tools
 
+| Tool | Credits | What it returns |
+| :--- | :--- | :--- |
+| `hasdata_walmart_product_getWalmartProduct` | 10 | Title, brand, model, UPC, condition, availability, price with strikethrough before-price and unit price, the seller holding the buy box with its rating and return… |
+| `hasdata_walmart_reviews_getWalmartReviews` | 10 | Each review with its rating, title, full text with paragraphs preserved, submission date, author, verified-purchase flag, helpful and not-helpful vote counts, badges,… |
+| `hasdata_walmart_search_getSearchResults` | 10 | The product list with item id, title, product URL, brand, price and strikethrough before-price, star rating, review count, seller, availability, sponsored flag, badges,… |
+
 Three tools, 10 credits per successful call. Each takes `domain`, either `walmart.com` or `walmart.ca`, and `language`, where `walmart.com` serves `en` and `es` while `walmart.ca` serves `en` and `fr`. A language the storefront does not offer falls back to its default.
 
 Item ids are storefront-scoped. On `walmart.com` they are numeric, such as `18493462688`, and on `walmart.ca` alphanumeric, such as `6NZMJ5CW6MH2`. An id from one storefront does not resolve on the other.
