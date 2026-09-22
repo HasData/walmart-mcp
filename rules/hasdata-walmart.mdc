@@ -1,0 +1,24 @@
+---
+description: How to pull Walmart search, product and review data through the HasData MCP server
+alwaysApply: false
+---
+
+# Walmart through HasData
+
+Three tools. Search takes `q`, while the product and review tools take either `itemId` or the product `url`. Pass one of the two, not both.
+
+## A price belongs to a store
+
+Walmart answers for one store, and the response names it in `searchInformation.storeId` and in `fulfillment.message`. An item that is in stock nationally can come back unavailable because it is unavailable at that store. When the task compares prices, fix the store deliberately and report which one the numbers came from.
+
+## Paging stops early
+
+Results dry up after roughly page ten, and the extra pages come back empty rather than erroring. A broad keyword cannot be enumerated by paging, so narrow it with filters such as `minPrice`, `maxPrice`, `catId` or `deliveryType` instead of walking deeper.
+
+## Two totals, both correct
+
+`searchInformation.totalResultsDisplay` is the string Walmart prints, such as `1000+`. `pagination` reports what you can actually reach. Quote the second when you promise a count you can deliver.
+
+## Ratings are not reviews
+
+The product tool reports `reviews.totalReviews`, which counts ratings. The reviews tool returns written reviews, and the two numbers rarely match. Say which one you are quoting.
