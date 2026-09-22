@@ -3,7 +3,7 @@
   "mcpServers": {
     "walmart": {
       "type": "streamable-http",
-      "url": "https://mcp.hasdata.com/api/mcp?apis=walmart",
+      "url": "https://mcp.hasdata.com/mcp?apis=walmart",
       "headers": {
         "x-api-key": "YOUR_HASDATA_API_KEY"
       }
