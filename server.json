@@ -3,7 +3,7 @@
   "name": "com.hasdata/walmart",
   "title": "HasData Walmart",
   "description": "Walmart search, product pages and customer reviews on walmart.com and walmart.ca, as JSON.",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "websiteUrl": "https://docs.hasdata.com/apis/walmart/search",
   "repository": {
     "url": "https://github.com/HasData/walmart-mcp",
@@ -27,7 +27,7 @@
     {
       "registryType": "npm",
       "identifier": "@hasdata/walmart-mcp",
-      "version": "1.0.0",
+      "version": "1.0.1",
       "transport": {
         "type": "stdio"
       },
@@ -43,7 +43,7 @@
     {
       "registryType": "pypi",
       "identifier": "hasdata-walmart-mcp",
-      "version": "1.0.0",
+      "version": "1.0.1",
       "runtimeHint": "uvx",
       "transport": {
         "type": "stdio"
