@@ -22,3 +22,7 @@ Results dry up after roughly page ten, and the extra pages come back empty rathe
 ## Ratings are not reviews
 
 The product tool reports `reviews.totalReviews`, which counts ratings. The reviews tool returns written reviews, and the two numbers rarely match. Say which one you are quoting.
+
+## Prompts and resources
+
+The server also serves resources that spell out the accepted values of every parameter that takes a fixed list, each one at `hasdata://walmart/<parameter>`. Reading one spends no credits and makes no upstream request, which beats discovering the vocabulary from a rejected call. Listing them needs no API key either, so a client can read them before the user has connected an account.
